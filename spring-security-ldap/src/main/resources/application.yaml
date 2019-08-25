@@ -1,0 +1,7 @@
+# See https://spring.io/guides/gs/authenticating-ldap/
+spring:
+  ldap:
+    embedded:
+      ldif: classpath:test-server.ldif
+      base-dn: dc=springframework,dc=org
+      port: 8389
