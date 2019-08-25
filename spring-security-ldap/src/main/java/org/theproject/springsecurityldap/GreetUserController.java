@@ -1,5 +1,6 @@
 package org.theproject.springsecurityldap;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetUserController {
 
     @RequestMapping("/")
-    public String hello() {
-        return "Welcome";
+    public String hello(Authentication auth) {
+        return "Welcome " + auth.getName();
     }
 }
