@@ -20,7 +20,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
-                .dataSource(dataSource);
+                .dataSource(dataSource)
+                .usersByUsernameQuery(
+                        "select name, password, alpha from dogs where name = ?");
     }
 
 }
