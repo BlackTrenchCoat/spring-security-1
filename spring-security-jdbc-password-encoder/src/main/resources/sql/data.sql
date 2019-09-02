@@ -1,7 +1,3 @@
---insert into users  (username, password, enabled) values ('rain', 'rain', true);
-
---insert into users  (username, password, enabled) values ('whisper', 'whisper', true);
-
 insert into users (username, password, enabled)
 values
 ('rain', '{bcrypt}$2a$10$ueoEaXcj/3lao0YFFCZ83euX76xKZ9Q02xpUrTXVAhl1zxAV0ZvOa', true);
