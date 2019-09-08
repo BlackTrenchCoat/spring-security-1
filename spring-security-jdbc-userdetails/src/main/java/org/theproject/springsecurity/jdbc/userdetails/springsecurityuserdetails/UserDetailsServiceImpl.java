@@ -1,4 +1,4 @@
-package theproject.org.springsecurity.jdbc.userdetails.springsecurityuserdetails;
+package org.theproject.springsecurity.jdbc.userdetails.springsecurityuserdetails;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -8,7 +8,7 @@
         <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>theproject.org.springsecurity.jdbc.userdetails</groupId>
+    <groupId>org.theproject.springsecurity.jdbc.userdetails</groupId>
     <artifactId>spring-security-userdetails</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springsecurityuserdetails</name>

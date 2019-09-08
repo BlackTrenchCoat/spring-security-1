@@ -1,4 +1,4 @@
-package theproject.org.springsecurity.jdbc.userdetails.springsecurityuserdetails;
+package org.theproject.springsecurity.jdbc.userdetails.springsecurityuserdetails;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

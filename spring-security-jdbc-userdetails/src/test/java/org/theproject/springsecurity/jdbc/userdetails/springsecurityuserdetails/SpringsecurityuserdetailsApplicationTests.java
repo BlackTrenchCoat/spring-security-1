@@ -1,4 +1,4 @@
-package theproject.org.springsecurity.jdbc.userdetails.springsecurityuserdetails;
+package org.theproject.springsecurity.jdbc.userdetails.springsecurityuserdetails;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
