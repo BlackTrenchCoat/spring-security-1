@@ -4,8 +4,8 @@ create table dogs(
       password varchar(50) not null,
       alpha boolean not null);
 
-create table authorities (
-      username varchar(50) not null,
-      authority varchar(50) not null,
-      constraint fk_authorities_users foreign key(username) references dogs(name));
-      create unique index ix_auth_username on authorities (username,authority);
+create table privileges (
+      name varchar(50) not null,
+      privilege varchar(50) not null,
+      constraint fk_privileges_users foreign key(name) references dogs(name));
+      create unique index ix_auth_name on privileges (name,privilege);

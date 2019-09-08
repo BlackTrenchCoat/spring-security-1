@@ -22,7 +22,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
                 .dataSource(dataSource)
                 .usersByUsernameQuery(
-                        "select name, password, alpha from dogs where name = ?");
+                        "select name, password, alpha from dogs where name = ?")
+                .authoritiesByUsernameQuery(
+                        "select name,privilege from privileges where name = ?");
     }
 
 }
