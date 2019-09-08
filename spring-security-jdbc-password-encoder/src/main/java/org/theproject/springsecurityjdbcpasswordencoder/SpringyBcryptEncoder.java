@@ -14,5 +14,20 @@ public class SpringyBcryptEncoder {
                 p1, bCryptPasswordEncoder.encode(p1)));
         System.out.println(String.format("bcrypt hash of %s is %s",
                 p2, bCryptPasswordEncoder.encode(p2)));
+
+        String h1 = bCryptPasswordEncoder.encode(p2);
+        String h2 = bCryptPasswordEncoder.encode(p2);
+
+        if (bCryptPasswordEncoder.matches(p2, h1)) {
+            System.out.println(String.format("%s matches %s", p2, h1));
+        } else {
+            System.out.println(String.format("%s doesn't match %s", p2, h1));
+        }
+
+        if (bCryptPasswordEncoder.matches(p2, h2)) {
+            System.out.println(String.format("%s matches %s", p2, h2));
+        } else {
+            System.out.println(String.format("%s doesn't match %s", p2, h2));
+        }
     }
 }
