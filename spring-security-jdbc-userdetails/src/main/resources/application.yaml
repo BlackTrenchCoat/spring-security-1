@@ -14,9 +14,9 @@ spring:
 logging:
   level:
     ROOT: warn
-    org.hibernate: DEBUG
+    org.hibernate: INFO
     org:
       springframework:
         data:
-          jpa: DEBUG
+          jpa: INFO
 #debug: true
