@@ -10,8 +10,13 @@
     <packaging>pom</packaging>
     
     <modules>
+      <module>spring-security-authorization</module>
+      <module>spring-security-inmemory</module>
       <module>spring-security-jdbc</module>
       <module>spring-security-jdbc-custom-ddl</module>
+      <module>spring-security-jdbc-password-encoder</module>
+      <module>spring-security-jdbc-userdetails</module>
+      <module>spring-security-ldap</module>
     </modules>
 
 </project>
